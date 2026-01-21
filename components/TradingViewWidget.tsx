@@ -19,7 +19,7 @@ const TradingViewWidget = ({
   height = 600,
   className,
 }: TradingViewWidgetProps) => {
-  const containerRef = useTradingViewWidget(scriptUrl, config, height);
+  const containerRef = useTradingViewWidget(scriptUrl, config);
 
   return (
     <div className="w-full">
