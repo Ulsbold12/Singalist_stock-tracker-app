@@ -17,14 +17,12 @@ const useTradingViewWidget = (
     );
     if (!widgetEl) return;
 
-    // route солигдох, re-render үед давхардахгүй байх
     widgetEl.innerHTML = "";
 
     const script = document.createElement("script");
     script.src = scriptUrl;
     script.async = true;
 
-    // TradingView embed-widget-* дээр config-оо script tag дотор JSON-оор өгдөг
     script.innerHTML = JSON.stringify(config);
 
     widgetEl.appendChild(script);
