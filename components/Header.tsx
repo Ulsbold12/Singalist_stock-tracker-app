@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container header-wrapper">
         <Link href="/">
           <Image
-            src="/assets/icons/logo.svg"
+            src="public/assets/icons/logo.svg"
             alt="Signalist logo"
             width={140}
             height={32}
