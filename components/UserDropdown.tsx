@@ -22,15 +22,16 @@ import { useRouter } from "next/navigation";
 import { LogOut } from "lucide-react";
 import NavItems from "./NavItems";
 import { NAV_ITEMS } from "@/lib/constants";
+import { signOut } from "@/lib/actions/auth.actions";
 
-const UserDropdown = () => {
+const UserDropdown = ({ user }: { user: User }) => {
   const router: AppRouterInstance = useRouter();
 
   const handleSignOut: () => Promise<void> = async () => {
+    await signOut();
     router.push("/sign-in");
   };
 
-  const user = { name: "john", email: "contact@ulsa.com" };
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
