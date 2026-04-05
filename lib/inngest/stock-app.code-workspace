@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "stock-app",
+		"path": "../.."
+	},
+	{
+		"name": "public",
+		"path": "../../../../Downloads/public"
+	}
+],
+  "settings": {}
+}
