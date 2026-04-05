@@ -1,8 +1,6 @@
-import { Label } from "@radix-ui/react-dropdown-menu";
-
 export const NAV_ITEMS = [
   { href: "/", label: "Home" },
-  { href: "/", label: "Dashboard" },
+  { href: "/Dashboard", label: "Dashboard" },
   { href: "/search", label: "Search" },
   // { href: '/watchlist', label: 'Watchlist' },
 ];
